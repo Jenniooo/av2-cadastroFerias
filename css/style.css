@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* RESET E FONTE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    transition: 0.3s linear;
+}
+
+/* HEADER / NAVBAR */
+header {
+    background-color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+}
+
+nav .left-side img {
+    width: 150px;
+}
+
+.right-side button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+#theme-icon {
+    font-size: 24px;
+    color: #f1c40f;
+}
+
+/* BOTÃO GERAR PDF */
+#gerar-pdf {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #71047b;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+#gerar-pdf:hover {
+    background: #8a0696;
+}
+
+/* SEÇÃO DO FORMULÁRIO */
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+.new-button {
+    background: #71047b;
+    border: none;
+    cursor: pointer;
+    padding: 10px 22px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.new-button:hover {
+    background: #8b0f96;
+}
+
+main {
+    margin-top: 20px;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.ferias-form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    font-weight: 600;
+}
+
+form input,
+form select {
+    padding: 10px 14px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #bdbdbd;
+    background: #fafafa;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #71047b;
+    box-shadow: 0 0 5px rgba(113,4,123,0.4);
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.cancel-btn,
+.submit-btn {
+    padding: 10px;
+    width: 48%;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: #999;
+}
+
+.submit-btn {
+    background: #71047b;
+}
+
+.cancel-btn:hover {
+    background: #777;
+}
+
+.submit-btn:hover {
+    background: #8b0f96;
+}
+
+/* LISTA E CARDS */
+.lista-ferias {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-ferias {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 6px solid #71047b;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-info p {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.card-actions i {
+    font-size: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card-actions i:hover {
+    color: #71047b;
+    transform: scale(1.1);
+}
+
+/* DARK MODE */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode header {
+    background-color: #1e1e1e;
+}
+
+.dark-mode #theme-icon {
+    color: #f1c40f;
+}
+
+.dark-mode input,
+.dark-mode select {
+    background-color: #2a2a2a;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark-mode .new-button {
+    background-color: #a313b6;
+}
+
+.dark-mode .ferias-form {
+    background: #1f1f1f;
+}
+
+.dark-mode .card-ferias {
+    background: #1f1f1f;
+    border-left-color: #a313b6;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .form-section {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .ferias-form {
+        width: 92%;
+    }
+
+    .lista-ferias {
+        width: 95%;
+    }
+}

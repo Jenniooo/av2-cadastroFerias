@@ -100,8 +100,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #a63a0b;
-}
+    background-color:#9e13ab;
 
 .error {
     border: 2px solid #d62828 !important;

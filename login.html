@@ -2,8 +2,9 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
+
   <link rel="stylesheet" href="css/login.css">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
@@ -11,10 +12,9 @@
 <body>
 
   <div class="login-wrapper">
-
     <div class="login-card">
 
-      <img src="img/logo.png" class="logo" alt="Logo">
+      <img src="img/logo.png" class="logo" alt="Logo do sistema">
 
       <h1>Bem-vindo de volta</h1>
       <p class="sub">Faça login para continuar</p>
@@ -22,13 +22,15 @@
       <form id="loginForm">
 
         <div class="input-box">
+          <label for="email">Email</label>
           <i class='bx bxs-user'></i>
-          <input type="email" name="email" placeholder="Email" required>
+          <input id="email" type="email" name="email" placeholder="Email" required>
         </div>
 
         <div class="input-box">
+          <label for="senha">Senha</label>
           <i class='bx bxs-lock-alt'></i>
-          <input type="password" name="senha" placeholder="Senha" required>
+          <input id="senha" type="password" name="senha" placeholder="Senha" required>
         </div>
 
         <button type="submit">Entrar</button>
@@ -41,8 +43,8 @@
       </form>
 
     </div>
-
   </div>
+
   <script src="js/login.js"></script>
 
 </body>

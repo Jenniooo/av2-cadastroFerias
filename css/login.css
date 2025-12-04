@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #8b0f96, #aa370a);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* --- CONTAINER CENTRAL --- */
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(25px);
+    padding: 45px 40px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+}
+
+/* --- LOGO --- */
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* --- TÍTULOS --- */
+
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.sub {
+    color: #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* --- INPUTS --- */
+
+.input-box {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #ffffffc7;
+    font-size: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px 45px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
+.input-box input::placeholder {
+    color: #e8e8e8;
+}
+
+.input-box input:focus {
+    background: rgba(255,255,255,0.35);
+}
+
+/* --- BOTÃO --- */
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ffffff;
+    color: #8b0f96;
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #f0f0f0;
+}
+
+/* --- LINK DE CADASTRO --- */
+
+.register {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.register a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.error {
+    border: 2px solid #d62828 !important;
+}
+
+.error-message {
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 4px;
+    display: block;
+}

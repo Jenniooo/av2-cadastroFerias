@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #8b0f96, #aa370a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CONTAINER CENTRAL */
+.box {
+    width: 430px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(25px);
+    padding: 40px 35px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* LOGO */
+.logo-box img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* TÍTULO */
+.box h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ededed;
+}
+
+/* TEXTO */
+.box p {
+    color: #3D3D3D;
+    margin-bottom: 20px;
+}
+
+.box p a {
+    color: #8b0f96;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.box p a:hover {
+    text-decoration: underline;
+}
+
+/* CAMPOS DO FORM */
+.input-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+    color: #ffffff;
+}
+
+.input-group input {
+    width: 100%;
+    height: 47px;
+    padding: 15px;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-color: rgba(255, 255, 255, 0.32);
+    transition: 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #8b0f96;
+}
+
+/* BOTÃO */
+input[type="submit"] {
+    width: 100%;
+    height: 47px;
+    background-color: #8b0f96;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 5px;
+    transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #a63a0b;
+}
+
+.error {
+    border: 2px solid #d62828 !important;
+}
+
+.error-message {
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 4px;
+    display: block;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .box {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .logo-box img {
+        width: 120px;
+    }
+}
